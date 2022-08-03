@@ -7,4 +7,4 @@ Topology is the theorical mathematical field of shape. Recently, TDA has been de
 
 This project quantifies the topology of financial data. The results imply that the shape of data is an indicator of stock market crashes.
 
-STILL A WORK ON PROGRESS. Next steps are applying this same methodology not to stock indices, but to macroeconomic variables (GDP, CPI, Gas Prices, etc.).
+Next Steps: STILL A WORK ON PROGRESS. Next steps are applying this same methodology not to stock indices, but to macroeconomic variables (GDP, CPI, Gas Prices, etc.).
