@@ -1,0 +1,27 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(astsa)
+```
+
+
+```{r}
+df = read.csv("C:\\Users\\brian.livian\\OneDrive - Interpublic\\Desktop\\Macroeconomic Data.csv")
+head(df)
+```
+
+```{r}
+a = df$Interest
+b = df$Unemployement.Index
+astsa::lag2.plot(a,b, 11)
+ccf(df$Interest, df$CPI)
+```
+
+```{r}
+ccf(a,b)
+```
+
+
