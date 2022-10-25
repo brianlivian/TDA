@@ -9,7 +9,7 @@ library(astsa)
 
 
 ```{r}
-df = read.csv("C:\\Users\\brian.livian\\OneDrive - Interpublic\\Desktop\\Macroeconomic Data.csv")
+df = read.csv("Data/Macroeconomic Data.csv")
 head(df)
 ```
 
@@ -17,11 +17,37 @@ head(df)
 a = df$Interest
 b = df$Unemployement.Index
 astsa::lag2.plot(a,b, 11)
-ccf(df$Interest, df$CPI)
+ccf(a, b)
 ```
 
 ```{r}
-ccf(a,b)
+a = df$Interest
+b = df$GDP
+astsa::lag2.plot(a,b, 11)
+ccf(a, b)
+
+```
+
+```{r}
+a = df$Interest
+b = df$CPI
+astsa::lag2.plot(a,b, 11)
+ccf(a, b)
+```
+
+
+
+```{r}
+a = df$Unemployement.Index
+b = df$GDP
+astsa::lag2.plot(a,b, 11)
+ccf(a, b)
+```
+```{r}
+a = df$CPI
+b = df$Unemployement.Index
+astsa::lag2.plot(a,b, 11)
+ccf(a, b)
 ```
 
 
